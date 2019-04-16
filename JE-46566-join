@@ -12,7 +12,7 @@ globals:
   mixedArray3: [{ id: 11 }, null, "456"]
 
 nodes:
-  - nodeType: tomcat
+  - nodeType: apache2
     cloudlets: 10
     nodeGroup: cp
     displayName: AppServer
