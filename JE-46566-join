@@ -13,7 +13,6 @@ globals:
 
 nodes:
   - nodeType: tomcat
-    count: 2
     cloudlets: 10
     nodeGroup: cp
     displayName: AppServer
