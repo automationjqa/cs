@@ -18,6 +18,9 @@ nodes:
     displayName: AppServer
   
 onInstall:
+- createFile:
+    - path: /var/www/webroot/cs-log.txt
+- nodeGroup: cp
 - assert: "'${globals.array.join()}' == '123'"
 - assert: "'${globals.array.join(,)}' == '1,2,3'"
 - assert: "'${globals.array.join(;)}' == '1;2;3'"
