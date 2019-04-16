@@ -1,5 +1,5 @@
 type: install
-name: 'TEST: JE-46566 [[CS:Placeholders] - built-in data processing functions] - join'
+name: 'TEST: JE-46566-join'
 
 globals:
   array: [1, 2, 3]
