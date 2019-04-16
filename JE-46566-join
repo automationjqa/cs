@@ -18,8 +18,8 @@ nodes:
     displayName: AppServer
   
 onInstall:
-- createFile[cp]:
-    - path: /var/www/webroot/cs-log.txt
+- createFile[apache2]: 
+   path: /var/www/webroot/cs-log.txt
 - assert: "'${globals.array.join()}' == '123'"
 - assert: "'${globals.array.join(,)}' == '1,2,3'"
 - assert: "'${globals.array.join(;)}' == '1;2;3'"
