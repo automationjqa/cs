@@ -10,16 +10,8 @@ globals:
   mixedArray: ["123", { id: 10 }]
   mixedArray2: [{ id: 10 }, "123"]
   mixedArray3: [{ id: 11 }, null, "456"]
-
-nodes:
-  - nodeType: apache2
-    cloudlets: 10
-    nodeGroup: cp
-    displayName: AppServer
   
 onInstall:
-- createFile[apache2]: 
-   path: /var/www/webroot/cs-log.txt
 - assert: "'${globals.array.join()}' == '123'"
 - assert: "'${globals.array.join(,)}' == '1,2,3'"
 - assert: "'${globals.array.join(;)}' == '1;2;3'"
