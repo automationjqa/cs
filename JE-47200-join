@@ -1,5 +1,5 @@
 type: install
-name: 'TEST: JE-46566-join'
+name: 'TEST: JE-46566 [[CS:Placeholders] - built-in data processing functions] - join'
 
 globals:
   array: [1, 2, 3]
@@ -28,6 +28,6 @@ onInstall:
 - assert: "${response.success}"
 
 - assert: '''${globals.mixedArray2.join(;)}'' == ''{"id":10};123'''
-- assert: '''${globals.mixedArray2.join()}'' == ''{"id":10},123'''
+- assert: '''${globals.mixedArray2.join()}'' == ''{"id":10}123'''
 - assert: "'${globals.mixedArray3.join(id,#)}' == '11##'"
 - assert: "[${globals.array.join(\\,\\n)}].join(',') === '1,2,3'"
