@@ -1,0 +1,9 @@
+type: update 
+name: Git and CS Bridge 
+
+onInstall: 
+  push-to-cs : ${nodes.cp.master.id} 
+   
+actions: 
+  push-to-cs: 
+    - cmd[${this}]: pwd
