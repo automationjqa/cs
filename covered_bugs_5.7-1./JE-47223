@@ -1,0 +1,6 @@
+type: update
+name: Test
+
+onInstall:
+  env.control.GetEnvInfo:
+  envName: ${env.name}
