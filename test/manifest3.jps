@@ -10,3 +10,4 @@ addons:
     name: Custom Addon
     onInstall:
       createFile [cp]: /var/log/test.log
+      user: root
