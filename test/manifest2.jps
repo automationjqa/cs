@@ -1,8 +1,12 @@
 type: update
-name: manifest2
+name: $this in Custom Actions
 
 onInstall:
+- set:
+    a: 1
 - action_manifest2
 actions:
   action_manifest2:
-    createFile [cp]: /tmp/manifest2.txt
+    set:
+      a: simpleTxtFile1
+    createFile [cp]: /tmp/${this.a}.txt
