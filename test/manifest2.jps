@@ -10,3 +10,5 @@ actions:
     set:
       a: simpleTxtFile1
     createFile [cp]: /tmp/${this.a}.txt
+  action_manifest2:
+    createFile [cp]: /tmp/manifest2.txt
