@@ -2,8 +2,7 @@ type: update
 name: manifest2
 
 onInstall:
-- customAction
+- action_manifest2
 actions:
-  customAction:
   action_manifest2:
     createFile [cp]: /tmp/manifest2.txt
