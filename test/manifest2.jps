@@ -1,0 +1,12 @@
+type: update
+name: $this in Custom Actions
+
+onInstall:
+- set:
+    a: 1
+- customAction
+actions:
+  customAction:
+    set:
+      a: simpleTxtFile1
+    createFile [cp]: /tmp/${this.a}.txt
