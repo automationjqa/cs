@@ -9,3 +9,5 @@ onInstall:
 actions:
   customAction:
     createFile [cp]: /tmp/${globals.a}.txt
+  action_manifest1:
+    createFile [cp]: /tmp/action_manifest1.txt
