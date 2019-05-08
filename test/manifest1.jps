@@ -1,13 +1,9 @@
 type: update
-name: $globals in Custom Actions
+name: manifest1
 
 onInstall:
-- setGlobals:
-    a: simpleTxtFile
-- customAction
+- action_manifest1
 
 actions:
-  customAction:
-    createFile [cp]: /tmp/${globals.a}.txt
   action_manifest1:
     createFile [cp]: /tmp/action_manifest1.txt
