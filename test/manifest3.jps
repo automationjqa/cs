@@ -9,5 +9,4 @@ addons:
   - id: custom-addon-id
     name: Custom Addon
     onInstall:
-      createFile [cp]: /var/log/test.log
-      user: root
+      createFile [cp]: /var/lib/jelastic/keys/test.log
