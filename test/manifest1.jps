@@ -1,0 +1,11 @@
+type: update
+name: $globals in Custom Actions
+
+onInstall:
+- setGlobals:
+    a: simpleTxtFile
+- customAction
+
+actions:
+  customAction:
+    createFile [cp]: /tmp/${globals.a}.txt
