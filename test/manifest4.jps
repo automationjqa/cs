@@ -1,0 +1,12 @@
+type: install
+name: Addon installation
+
+onInstall:
+  installAddon:
+    id: custom-addon-id1
+
+addons:
+  id: custom-addon-id1
+  name: Custom Addon
+  onInstall:
+    createFile [cp]: /var/log/test.log
