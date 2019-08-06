@@ -1,0 +1,12 @@
+type: update
+name: '[OnBefore/OnAfter events] - ScaleIn, ScaleOut'
+  
+onBeforeScaleIn[cp]:
+  - log: before scale in event
+onAfterScaleIn[cp]:
+  - log: after scale in event
+  
+onBeforeScaleOut[cp]:
+  - log: before scale out event
+onAfterScaleOut[cp]:
+  - log: after scale out event
