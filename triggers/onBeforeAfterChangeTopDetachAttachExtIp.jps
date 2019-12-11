@@ -6,12 +6,12 @@ onBeforeChangeTopology:
 onAfterChangeTopology:
   - log: after change topology event
   
-onBeforeAttachExtIp[apache2]:
+onBeforeAttachExtIp[${nodes.cp[0].id}]:
   - log: before attach ext ip
-onAfterAttachExtIp[apache2]:
+onAfterAttachExtIp[${nodes.cp[0].id}]:
   - log: after attach ext ip
   
-onBeforeDetachExtIp[apache2]:
+onBeforeDetachExtIp[${nodes.cp[0].id}]:
   - log: before detach ext ip
-onAfterDetachExtIp[apache2]:
+onAfterDetachExtIp[${nodes.cp[0].id}]:
   - log: after detach ext ip
