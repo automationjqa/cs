@@ -1,12 +1,12 @@
 type: update
 name: '[OnBefore/OnAfter events] - AddNode, RemoveNode'
 
-onBeforeAddNode[cp]:
+onBeforeAddNode[bl]:
   - log: before add node
-onAfterAddNode[cp]:
+onAfterAddNode[bl]:
   - log: after add node
   
-onBeforeRemoveNode[cp]:
+onBeforeRemoveNode[bl]:
   - log: before remove node
-onAfterRemoveNode[cp]:
+onAfterRemoveNode[bl]:
   - log: after remove node
