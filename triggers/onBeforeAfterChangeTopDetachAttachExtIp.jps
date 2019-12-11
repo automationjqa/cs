@@ -1,17 +1,17 @@
 type: update
 name: '[OnBefore/OnAfter events] - ChangeTopology, DetachExtip, AttachExtip'
 
-onBeforeChangeTopology[cp]:
+onBeforeChangeTopology:
   - log: before change topology event
-onAfterChangeTopology[cp]:
+onAfterChangeTopology:
   - log: after change topology event
   
-onBeforeAttachExtIp[cp]:
+onBeforeAttachExtIp:
   - log: before attach ext ip
-onAfterAttachExtIp[cp]:
+onAfterAttachExtIp:
   - log: after attach ext ip
   
-onBeforeDetachExtIp[cp]:
+onBeforeDetachExtIp:
   - log: before detach ext ip
-onAfterDetachExtIp[cp]:
+onAfterDetachExtIp:
   - log: after detach ext ip
