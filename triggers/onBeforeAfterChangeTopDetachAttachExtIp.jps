@@ -6,12 +6,12 @@ onBeforeChangeTopology[cp]:
 onAfterChangeTopology[cp]:
   - log: after change topology event
   
-onBeforeAttachExtip[cp]:
+onBeforeAttachExtIp[cp]:
   - log: before attach ext ip
-onAfterAttachExtip[cp]:
+onAfterAttachExtIp[cp]:
   - log: after attach ext ip
   
-onBeforeDetachExtip[cp]:
+onBeforeDetachExtIp[cp]:
   - log: before detach ext ip
-onAfterDetachExtip[cp]:
+onAfterDetachExtIp[cp]:
   - log: after detach ext ip
