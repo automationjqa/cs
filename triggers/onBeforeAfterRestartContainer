@@ -1,0 +1,7 @@
+type: update
+name: '[OnBefore/OnAfter events] - RestartContainer'
+
+onBeforeRestartContainer:
+  - log: before restart container
+onAfterRestartContainer:
+  - log: after restart container
