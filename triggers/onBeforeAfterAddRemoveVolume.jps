@@ -1,0 +1,11 @@
+type: update
+name: '[OnBefore/OnAfter events] - AddVolume, RemoveVolume'
+
+onBeforeAddVolume[cp]:
+  - log: before add volume
+onAfterAddVolume[cp]:
+  - log: after add volume
+onBeforeRemoveVolume[cp]:
+  - log: before remove volume
+onAfterRemoveVolume[cp]:
+  - log: after remove volume
