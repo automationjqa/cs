@@ -1,11 +1,11 @@
 type: update
 name: '[OnBefore/OnAfter events] - LinkNodes, UnlinkNodes'
 
-onBeforeLinkNodes[*]:
+onBeforeLinkNodes:
   - log: before link nodes
-onAfterLinkNodes[*]:
+onAfterLinkNodes:
   - log: after link nodes
-onBeforeUnlinkNodes[*]:
+onBeforeUnlinkNodes:
   - log: before unlink nodes
-onAfterUnlinkNodes[*]:
+onAfterUnlinkNodes:
   - log: after unlink nodes
