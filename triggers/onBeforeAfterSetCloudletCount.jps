@@ -1,0 +1,7 @@
+type: update
+name: '[OnBefore/OnAfter events] - SetCloudletCount'
+
+onBeforeSetCloudletCount[cp]:
+  - log: before set cloudlets count
+onAfterSetCloudletCount[cp]:
+  - log: after set cloudlets count
