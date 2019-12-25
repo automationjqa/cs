@@ -1,0 +1,7 @@
+type: update
+name: '[OnBefore/OnAfter events] - SetEnvVars'
+
+onBeforeSetEnvVars[cp]:
+  - log: before set env vars
+onAfterSetEnvVars[cp]:
+  - log: after set env vars
