@@ -1,0 +1,11 @@
+type: update
+name: '[OnBefore/OnAfter events] - SetEntryPoint, SetRunCmd'
+
+onBeforeSetEntryPoint[cp]:
+  - log: before set entry point
+onAfterSetEntryPoint[cp]:
+  - log: after set entry point
+onBeforeSetRunCmd[cp]:
+  - log: before set run cmd
+onAfterSetRunCmd[cp]:
+  - log: after set run cmd
