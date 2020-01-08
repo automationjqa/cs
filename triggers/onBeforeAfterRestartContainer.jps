@@ -1,7 +1,7 @@
 type: update
-name: '[OnBefore/OnAfter events] - RestartContainer'
+name: '[OnBefore/OnAfter events] - RestartNode'
 
 onBeforeRestartNode:
-  - log: before restart container
+  - log: before restart node
 onAfterRestartNode:
-  - log: after restart container
+  - log: after restart node
