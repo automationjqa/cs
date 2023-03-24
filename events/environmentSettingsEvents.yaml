@@ -1,0 +1,28 @@
+type: update
+name: '[OnBefore/OnAfter events]'
+description:
+  text: "Environment settings: onBeforeSwapExtDomains/onAfterSwapExtDomains, onBeforeSwapExtIps/onAfterSwapExtIps, onBeforeBindSSL/onAfterBindSSL, onBeforeRemoveSSL/onAfterRemoveSSL, onAlert"
+
+onBeforeSwapExtDomains:
+  - log: before swap external domains
+onAfterSwapExtDomains:
+  - log: after swap external domains
+
+onBeforeSwapExtIps:
+  - log: before swap external ips
+onAfterSwapExtIps:
+  - log: after swap external ips
+
+onBeforeBindSSL:
+  - log: before bind ssl
+onAfterBindSSL:
+  - log: after bind ssl
+
+onBeforeRemoveSSL:
+  - log: before remove ssl
+onAfterRemoveSSL:
+  - log: after remove ssl
+
+onAlert [cp]:
+  log: onAlert event has subscribed
+
