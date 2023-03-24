@@ -1,0 +1,66 @@
+type: update
+name: '[OnBefore/OnAfter events]'
+description:
+  text: "Change topology actions: onBeforeChangeTopology/onAfterChangeTopology,
+        onBeforeScaleOut/onAfterScaleOut,
+        onBeforeScaleIn/onAfterScaleIn, 
+        onBeforeServiceScaleOut/onBeforeServiceScaleOut,
+        onBeforeRestartNode/onAfterRestartNode, 
+        onBeforeAddNode/onAfterAddNode, 
+        onBeforeCloneNodes/onAfterCloneNodes, 
+        onBeforeLinkNode/onAfterLinkNode, 
+        onBeforeAttachExtIp/onAfterAttachExtIp, 
+        onBeforeDetachExtIp/onAfterDetachExtIp, 
+        onBeforeSetCloudletCount/onAfterSetCloudletCount,
+        onBeforeRemoveNode/onAfterRemoveNode,
+        onBeforeChangeEngine/onAfterChangeEngine"
+        
+onBeforeScaleIn[cp]:
+  - log: before scale in event
+onAfterScaleIn[cp]:
+  - log: after scale in event
+  
+onBeforeScaleOut[cp]:
+  - log: before scale out event
+onAfterScaleOut[cp]:
+  - log: after scale out event
+
+onBeforeChangeTopology:
+  - log: before change topology event
+onAfterChangeTopology:
+  - log: after change topology event
+  
+onBeforeAttachExtIp[${nodes.cp[0].id}]:
+  - log: before attach ext ip
+onAfterAttachExtIp[${nodes.cp[0].id}]:
+  - log: after attach ext ip
+  
+onBeforeDetachExtIp[${nodes.cp[0].id}]:
+  - log: before detach ext ip
+onAfterDetachExtIp[${nodes.cp[0].id}]:
+  - log: after detach ext ip
+
+onBeforeCloneNodes[cp]:
+  - log: before clone nodes
+onAfterCloneNodes[cp]:
+  - log: after clone nodes
+
+onBeforeAddNode:
+  - log: before add node
+onAfterAddNode:
+  - log: after add node
+  
+onBeforeRemoveNode:
+  - log: before remove node
+onAfterRemoveNode:
+  - log: after remove node
+
+onBeforeSetCloudletCount[cp]:
+  - log: before set cloudlets count
+onAfterSetCloudletCount[cp]:
+  - log: after set cloudlets count
+
+onBeforeServiceScaleOut:
+    - log: before service scale out
+onAfterServiceScaleOut:
+    - log: after service scale out
