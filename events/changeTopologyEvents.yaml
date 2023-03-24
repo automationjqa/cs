@@ -8,7 +8,6 @@ description:
         onBeforeRestartNode/onAfterRestartNode, 
         onBeforeAddNode/onAfterAddNode, 
         onBeforeCloneNodes/onAfterCloneNodes, 
-        onBeforeLinkNode/onAfterLinkNode, 
         onBeforeAttachExtIp/onAfterAttachExtIp, 
         onBeforeDetachExtIp/onAfterDetachExtIp, 
         onBeforeSetCloudletCount/onAfterSetCloudletCount,
