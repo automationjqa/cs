@@ -1,0 +1,87 @@
+type: update
+name: '[OnBefore/OnAfter events]'
+description:
+  text: "Node actions: onBeforeResetNodePassword/onAfterResetNodePassword,
+        onBeforeResetServicePassword/onAfterResetServicePassword, 
+        onBeforeRestartContainer/onAfterRestartContainer, 
+        onBeforeRedeployContainer/onAfterRedeployContainer, 
+        onBeforeLinkNodes/onAfterLinkNodes, 
+        onBeforeUnlinkNodes/onAfterUnlinkNodes, 
+        onBeforeSetEnvVars/onAfterSetEnvVars, 
+        onBeforeSetEntryPoint/onAfterSetEntryPoint, 
+        onBeforeSetRunCmd/onAfterSetRunCmd, 
+        onBeforeStartService/onAfterStartService, 
+        onBeforeAddVolume/onAfterAddVolume, 
+        onBeforeRemoveVolume/onAfterRemoveVolume, 
+        onBeforeChangeEngine/onAfterChangeEngine"
+
+onBeforeAddVolume[cp]:
+  - log: before add volume
+onAfterAddVolume[cp]:
+  - log: after add volume
+
+onBeforeRemoveVolume[cp]:
+  - log: before remove volume
+onAfterRemoveVolume[cp]:
+  - log: after remove volume
+
+onBeforeSetEnvVars[cp]:
+  - log: before set env vars
+onAfterSetEnvVars[cp]:
+  - log: after set env vars
+
+onBeforeSetEntryPoint[cp]:
+  - log: before set entry point
+onAfterSetEntryPoint[cp]:
+  - log: after set entry point
+
+onBeforeSetRunCmd[cp]:
+  - log: before set run cmd
+onAfterSetRunCmd[cp]:
+  - log: after set run cmd
+
+onBeforeLinkNodes:
+  - log: before link nodes
+onAfterLinkNodes:
+  - log: after link nodes
+
+onBeforeUnlinkNodes:
+  - log: before unlink nodes
+onAfterUnlinkNodes:
+  - log: after unlink nodes
+
+onBeforeRestartNode:
+  - log: before restart node
+onAfterRestartNode:
+  - log: after restart node
+
+onBeforeResetServicePassword:
+  - log: before reset password
+onAfterResetServicePassword:
+  - log: after reset password
+
+onBeforeStartService:
+  - log: before start service
+onAfterStartService:
+  - log: after start service
+
+onBeforeRedeployContainer:
+  - log: before redeploy container
+onAfterRedeployContainer:
+  - log: after redeploy container
+
+onBeforeChangeEngine:
+  - log: before change engine
+onAfterChangeEngine:
+  - log: after change engine
+
+onBeforeResetNodePassword:
+  - log: before reset node password
+onAfterResetNodePassword:
+  - log: after reset node password
+
+onBeforeRestartContainer:
+  - log: before restart container
+onAfterRestartContainer:
+  - log: after restart container
+
