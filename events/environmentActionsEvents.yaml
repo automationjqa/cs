@@ -1,7 +1,12 @@
 type: update
 name: '[OnBefore/OnAfter events]'
 description:
-  text: "Environment actions: onBeforeDelete, onBeforeStart/onBeforeStart, onBeforeStop/onBeforeStop, onBeforeClone/onAfterClone, onBeforeMigrate/onAfterMigrate, onAfterConfirmTransfer"
+  text: "Environment actions: onBeforeDelete, 
+        onBeforeStart/onBeforeStart, 
+        onBeforeStop/onBeforeStop, 
+        onBeforeClone/onAfterClone,
+        onBeforeMigrate/onAfterMigrate, 
+        onAfterConfirmTransfer"
   
 onBeforeConfirmTransfer:
   - log: before confirm transfer
@@ -32,3 +37,4 @@ onBeforeClone:
   - log: before clone
 onAfterClone:
   - log: after clone
+
