@@ -4,6 +4,7 @@ description:
   text: "Node actions: onBeforeResetNodePassword/onAfterResetNodePassword,
         onBeforeResetServicePassword/onAfterResetServicePassword, 
         onBeforeRestartContainer/onAfterRestartContainer, 
+        onBeforeRestartContainer/onAfterRestartContainer,
         onBeforeRedeployContainer/onAfterRedeployContainer, 
         onBeforeLinkNodes/onAfterLinkNodes, 
         onBeforeUnlinkNodes/onAfterUnlinkNodes, 
