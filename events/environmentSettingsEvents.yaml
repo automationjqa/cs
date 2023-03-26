@@ -1,7 +1,8 @@
 type: update
 name: '[OnBefore/OnAfter events]'
 description:
-  text: "Environment settings: onBeforeSwapExtDomains/onAfterSwapExtDomains, 
+  text: "Environment settings: 
+        onBeforeSwapExtDomains/onAfterSwapExtDomains, 
         onBeforeSwapExtIps/onAfterSwapExtIps, 
         onBeforeBindSSL/onAfterBindSSL, 
         onBeforeRemoveSSL/onAfterRemoveSSL, 
@@ -28,5 +29,5 @@ onAfterRemoveSSL:
   - log: after remove ssl
 
 onAlert [cp]:
-  log: onAlert event has subscribed
+  - log: onAlert event has subscribed
 
