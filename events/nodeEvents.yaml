@@ -11,7 +11,6 @@ description:
         onBeforeSetEnvVars/onAfterSetEnvVars, 
         onBeforeSetEntryPoint/onAfterSetEntryPoint, 
         onBeforeSetRunCmd/onAfterSetRunCmd, 
-        onBeforeStartService/onAfterStartService, 
         onBeforeAddVolume/onAfterAddVolume, 
         onBeforeRemoveVolume/onAfterRemoveVolume, 
         onBeforeChangeEngine/onAfterChangeEngine"
@@ -60,11 +59,6 @@ onBeforeResetServicePassword:
   - log: before reset password
 onAfterResetServicePassword:
   - log: after reset password
-
-onBeforeStartService:
-  - log: before start service
-onAfterStartService:
-  - log: after start service
 
 onBeforeRedeployContainer:
   - log: before redeploy container
