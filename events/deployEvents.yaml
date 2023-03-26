@@ -1,7 +1,8 @@
 type: update
 name: '[OnBefore/OnAfter events]'
 description:
-  text: "Deploy actions: onBeforeUpdateVcsProject/onAfterUpdateVcsProject, 
+  text: "Deploy actions: 
+        onBeforeUpdateVcsProject/onAfterUpdateVcsProject, 
         onBeforeBuildProject/onAfterBuildProject, 
         onBeforeDeploy/onAfterDeploy"
 
