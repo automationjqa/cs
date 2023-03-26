@@ -66,6 +66,6 @@ onAfterServiceScaleOut:
     - log: after service scale out
 
 onBeforeStartService:
-  - log: before start service
+    - log: before start service
 onAfterStartService:
-  - log: after start service
+    - log: after start service
