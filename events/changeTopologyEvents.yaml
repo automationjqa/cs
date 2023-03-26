@@ -12,7 +12,7 @@ description:
         onBeforeDetachExtIp/onAfterDetachExtIp, 
         onBeforeSetCloudletCount/onAfterSetCloudletCount,
         onBeforeRemoveNode/onAfterRemoveNode,
-        onBeforeChangeEngine/onAfterChangeEngine"
+        onBeforeStartService/onAfterStartService
         
 onBeforeScaleIn[cp]:
   - log: before scale in event
@@ -63,3 +63,8 @@ onBeforeServiceScaleOut:
     - log: before service scale out
 onAfterServiceScaleOut:
     - log: after service scale out
+
+onBeforeStartService:
+  - log: before start service
+onAfterStartService:
+  - log: after start service
