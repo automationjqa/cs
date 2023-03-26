@@ -1,7 +1,8 @@
 type: update
 name: '[OnBefore/OnAfter events]'
 description:
-  text: "Node actions: onBeforeResetNodePassword/onAfterResetNodePassword,
+  text: "Node actions: 
+        onBeforeResetNodePassword/onAfterResetNodePassword,
         onBeforeResetServicePassword/onAfterResetServicePassword, 
         onBeforeRestartContainer/onAfterRestartContainer, 
         onBeforeRestartContainer/onAfterRestartContainer,
