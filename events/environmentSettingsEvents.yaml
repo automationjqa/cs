@@ -5,7 +5,8 @@ description:
         onBeforeSwapExtDomains/onAfterSwapExtDomains, 
         onBeforeSwapExtIps/onAfterSwapExtIps, 
         onBeforeBindSSL/onAfterBindSSL, 
-        onBeforeRemoveSSL/onAfterRemoveSSL, 
+        onBeforeRemoveSSL/onAfterRemoveSSL,
+        onBeforeInstallAddon/onAfterInstallAddon,
         onAlert"
 
 onBeforeSwapExtDomains:
@@ -27,6 +28,11 @@ onBeforeRemoveSSL:
   - log: before remove ssl
 onAfterRemoveSSL:
   - log: after remove ssl
+
+onBeforeInstallAddon:
+  - log: before install addon
+onAfterInstallAddon:
+  - log: after install addon
 
 onAlert [cp]:
   - log: onAlert event has subscribed
