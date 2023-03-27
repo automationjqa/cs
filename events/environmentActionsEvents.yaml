@@ -29,9 +29,9 @@ onAfterStop:
   - log: after stop
 
 onBeforeMigrate:
-  - log: before mirgrate
+  - log: before migrate
 onAfterMigrate:
-  - log: after mirgrate
+  - log: after migrate
 
 onBeforeClone:
   - log: before clone
