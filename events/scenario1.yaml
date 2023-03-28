@@ -1,0 +1,33 @@
+type: update
+name: '[OnBefore/OnAfter events] - ChangeTopology, AddCloneNode, RestartContainer, ScaleOut, AttachExtIp'
+  
+onBeforeChangeTopology:
+  - log: before change topology event
+onAfterChangeTopology:
+  - log: after change topology event
+  
+onBeforeAddNode:
+  - log: before add node event
+onAfterAddNode:
+  - log: after add node event
+  
+onBeforeRestartContainer:
+  - log: before restart container event
+onAfterRestartContainer:
+  - log: after restart container event  
+
+onBeforeScaleOut:
+  - log: before scale out event
+onAfterScaleOut:
+  - log: after scale out event
+  
+onBeforeCloneNodes:
+  - log: before clone nodes event
+onAfterCloneNodes:
+  - log: after clone nodes event
+
+onBeforeAttachExtIp:
+  - log: before attach ExtIP event
+onAfterAttachExtIp:
+  - log: after attach ExtIP event
+  
