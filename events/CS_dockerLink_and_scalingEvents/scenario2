@@ -1,0 +1,12 @@
+type: update
+name: 'JE-56227-scenario 2'
+  
+onBeforeUnlinkNodes:
+  - log: before unlink nodes event
+onAfterUnlinkNodes:
+  - log: after unlink nodes event
+  
+onBeforeSetSLBAccessEnabled:
+  - log: before set SLA access enabled event
+onAfterSetSLBAccessEnabled:
+  - log: after set SLA access enabled event
