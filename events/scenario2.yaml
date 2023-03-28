@@ -1,0 +1,17 @@
+type: update
+name: '[OnBefore/OnAfter events] - ScaleIn, RemoveNode, DetachExtIp'
+  
+onBeforeScaleIn:
+  - log: before scale in event
+onAfterScaleIn:
+  - log: after scale in event
+  
+onBeforeRemoveNode:
+  - log: before remove node event
+onAfterRemoveNode:
+  - log: after remove node event
+  
+onBeforeDetachExtIp:
+  - log: before detach ExtIP event
+onAfterDetachExtIp:
+  - log: after detach ExtIP event
