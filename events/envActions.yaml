@@ -1,0 +1,32 @@
+type: update
+name: '[OnBefore/OnAfter events] - Stop, Start, Delete, ConfirmTransfer, Migrate, Clone'
+  
+onBeforeStop:
+  - log: before stop env event
+onAfterStop:
+  - log: after stop env event
+  
+onBeforeStart:
+  - log: before start env event
+onAfterStart:
+  - log: after start env event
+  
+onBeforeDelete:
+  - log: before delete env event
+onAfterDelete:
+  - log: after delete env event  
+
+onBeforeConfirmTransfer:
+  - log: before confirm transfer event
+onAfterConfirmTransfer:
+  - log: after confirm transfer event
+  
+onBeforeMigrate:
+  - log: before migrate env event
+onAfterMigrate:
+  - log: after migrate env event
+  
+onBeforeClone:
+  - log: before clone env event
+onAfterClone:
+  - log: after clone env event
