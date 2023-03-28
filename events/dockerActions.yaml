@@ -1,0 +1,27 @@
+type: update
+name: '[OnBefore/OnAfter events] - AddVolume, RemoveVolume, SetEnvVars, SetEntryPoint, SetRunCmd'
+  
+onBeforeAddVolume:
+  - log: before add volume event
+onAfterAddVolume:
+  - log: after add volume event
+  
+onBeforeRemoveVolume:
+  - log: before remove volume event
+onAfterRemoveVolume:
+  - log: after remove volume event
+  
+onBeforeSetEnvVars:
+  - log: before set env vars event
+onAfterSetEnvVars:
+  - log: after set env vars event  
+
+onBeforeSetEntryPoint:
+  - log: before set entry point event
+onAfterSetEntryPoint:
+  - log: after set entry point event
+  
+onBeforeSetRunCmd:
+  - log: before set run cmd event
+onAfterSetRunCmd:
+  - log: after set run cmd event
