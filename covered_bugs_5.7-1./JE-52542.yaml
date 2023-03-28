@@ -1,0 +1,12 @@
+type: update
+name: '[OnBefore/OnAfter events] - ScaleIn, ScaleOut'
+  
+onBeforeScaleIn[nosqldb]:
+  - log: before scale in event
+onAfterScaleIn[nosqldb]:
+  - log: after scale in event
+  
+onBeforeScaleOut[nosqldb]:
+  - log: before scale out event
+onAfterScaleOut[nosqldb]:
+  - log: after scale out event
