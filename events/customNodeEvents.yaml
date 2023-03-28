@@ -1,0 +1,12 @@
+type: update
+name: Test Custom Node Events
+targetNodes: any
+
+onCustomNodeEvent [name:test1]:
+  log: "filter by custom parameter. test1"
+
+onCustomNodeEvent [name:test2]:
+  log: "filter by custom parameter. test2"
+
+onCustomNodeEvent [${targetNodes.nodeGroup}]:
+  log: "filter by nodeGroup"
