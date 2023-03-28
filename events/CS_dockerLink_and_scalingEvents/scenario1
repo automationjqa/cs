@@ -1,0 +1,22 @@
+type: update
+name: 'JE-56227-scenario 1'
+  
+onBeforeLinkNodes:
+  - log: before link nodes event
+onAfterLinkNodes:
+  - log: after link nodes event
+  
+onBeforeLinkNode:
+  - log: before link node event
+onAfterLinkNode:
+  - log: after link node event
+  
+onBeforeSetExtIpCount:
+  - log: before set extip count event
+onAfterSetExtIpCount:
+  - log: after set extip count event
+  
+onBeforeSetCloudletCount:
+  - log: before set cloudlets count event
+onAfterSetCloudletCount:
+  - log: after set cloudlets count event
