@@ -1,0 +1,10 @@
+type: install
+name: Skip Email Test
+
+onInstall:
+  install:
+    skipEmail: false
+    jps: 
+      type: install
+      name: EMAIL is RECEIVED     
+      success: SUCCESS
