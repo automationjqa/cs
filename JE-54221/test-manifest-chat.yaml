@@ -1,0 +1,93 @@
+type: update
+name: JE-54221 [CS] - ability to return any fields in success API responses
+
+# Test 'return' action
+install:
+  type: install
+  name: Test 'return' action
+  onInstall:
+    return:
+      type: success
+      message: 'return'
+      data:
+        intField: 1
+        arrayField: [1, 2, 3]
+        objectField: 
+          strField: test
+  
+# Test 'script' action
+install:
+  type: install
+  name: Test 'script' action
+  onInstall:
+    script: |
+      return {
+        result: 0,
+        onAfterReturn: {
+          "return": {
+            type: 'success',
+            message: 'return',
+            data: {
+              intField: 1,
+              arrayField: [1, 2, 3],
+              objectField: { 
+                strField: 'test'
+              }
+            }
+          }
+        }
+      }
+  
+# Test 'ExecuteAction' API
+install:
+  type: update
+  name: Test 'ExecuteAction' API
+  actions:
+    testCustomAction:
+      return:
+        type: success
+        message: 'return'
+        data:
+          intField: 1
+          arrayField: [1, 2, 3]
+          objectField: 
+            strField: test     
+
+marketplace.installation.ExecuteAction:
+  appUniqueName: ${response.uniqueName}
+  action: testCustomAction
+
+# Test 'Install' API
+set:
+  actionKey: ${fn.uuid}
+
+marketplace.jps.Install:
+  actionKey: ${this.actionKey}
+  jps:
+    type: install
+    name: Test 'return' action
+    onInstall:
+      return:
+        type: success
+        message: 'return'
+        data:
+          intField: 1
+          arrayField: [1, 2, 3]
+          objectField: 
+            strField: test  
+
+# Test 'GetInstallationEvent' API
+marketplace.installation.GetInstallationEvent:
+  name: finish
+  criteria:
+    params.actionKey: ${this.actionKey}
+
+# Test response
+actions:
+  testResponse:
+    log: ${this:Test}
+    assert:       
+      "'${response.data.intField}' == '1'"     
+      "'${response.data.arrayField[2]}' == '3'"     
+      "'${response.data.objectField.strField}' == 'test'"        
+      "'${response.successText}' == 'return'"
