@@ -1,9 +1,12 @@
+skipNodeEmails: true
+
 type: install
 name: Test-1
 
 onInstall:
   script: |
     return jelastic.marketplace.jps.Install({
+      envName: "env-11111111111",
       skipNodeEmails: true,
       jps: toJSON({
         type: "install",
