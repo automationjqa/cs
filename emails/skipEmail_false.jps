@@ -6,5 +6,5 @@ onInstall:
     skipEmail: false
     jps: 
       type: install
-      name: EMAIL is RECEIVED     
-      success: SUCCESS
+      name: TEST EMAIL   
+      success: SUCCESS! YOUR TEST EMAIL IS RECEIVED.
