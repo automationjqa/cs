@@ -1,0 +1,114 @@
+type: update
+name: JE-54221 [CS] - ability to return any fields in success API responses
+
+onInstall:
+  # install action test
+  
+install:
+      type: install
+      name: Test 'return' action
+      onInstall:
+        return:
+          type: success
+          message: 'return'
+          data:
+            intField: 1
+            arrayField: [1, 2, 3]
+            objectField: 
+              strField: test
+testResponse: Test 'return' action
+ 
+install:
+      type: install
+      name: Test 'script' action
+      onInstall:
+        script: |
+          return {
+            result: 0,
+            onAfterReturn: {
+              "return": {
+                type: 'success',
+                message: 'return',
+                data: {
+                  intField: 1,
+                  arrayField: [1, 2, 3],
+                  objectField: { 
+                   strField: 'test'
+                  }
+                }
+              }
+            }
+          }; 
+testResponse: Test 'script' action
+
+  # ExecuteAction API test    
+  
+install:
+      type: update
+      name: Test 'ExecuteAction' API
+      actions:
+        testCustomAction:
+          return:
+            type: success
+            message: 'return'
+            data:
+              intField: 1
+              arrayField: [1, 2, 3]
+              objectField: 
+                strField: test      
+marketplace.installation.ExecuteAction:
+      appUniqueName: ${response.uniqueName}
+      action: testCustomAction 
+testResponse: Test 'script' action
+
+  # Install API test  
+set:
+      actionKey: ${fn.uuid} 
+marketplace.jps.Install:
+      actionkey: ${this.actionkey}
+      jps:
+        type: install
+        name: Test 'return' action
+        onInstall:
+          return:
+            type: success
+            message: 'return'
+            data:
+              intField: 1
+              arrayField: [1, 2, 3]
+              objectField: 
+                strField: test  
+testResponse: Test 'Install' API
+
+  # GetInstallationEvent API test
+  
+marketplace.installation.GetInstallationEvent:
+      name: finish
+      criteria:
+        params.actionKey: ${this.actionkey}  
+assert:     
+"'${response.params.data.intField}' == '1'"      
+"'${response.params.data.arrayField[2]}' == '3'"      
+"'${response.params.data.objectField.strField}' == 'test'"      
+"'${response.params.successText}' == 'return'"
+
+
+actions:
+  testResponse:
+    
+log: ${this:Test}
+
+    
+assert:
+
+        
+"'${response.data.intField}' == '1'"
+
+        
+"'${response.data.arrayField[2]}' == '3'"
+
+        
+"'${response.data.objectField.strField}' == 'test'"
+
+        
+"'${response.successText}' == 'return'"
