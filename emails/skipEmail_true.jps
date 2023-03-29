@@ -6,5 +6,5 @@ onInstall:
     skipEmail: true
     jps: 
       type: install
-      name: SKIP EMAIL TEST   
-      success: SUCCESS
+      name: EMAIL is RECEIVED   
+      success: This email shouldn't be received!
