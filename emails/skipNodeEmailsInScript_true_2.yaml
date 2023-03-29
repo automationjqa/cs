@@ -1,3 +1,5 @@
+skipNodeEmails: "true"
+
 type: install
 name: Test-3
 
