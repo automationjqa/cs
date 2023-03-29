@@ -1,0 +1,17 @@
+type: install
+name: Test-3
+
+onInstall:
+  script: |
+    return jelastic.marketplace.jps.Install({
+      envName: "env-1111333333",
+      skipNodeEmails: "true",
+      jps: toJSON({
+        type: "install",
+        name: "Test skipNodeEmails",
+        nodes: [{
+          nodeType: "mysql",
+          cloudlets: 8
+        }]
+      })
+    });
