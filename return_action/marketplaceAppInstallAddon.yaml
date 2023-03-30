@@ -1,0 +1,33 @@
+type: update
+name: JE-54221 [CS] - Custom Action
+
+buttons:
+  confirmText: testCustomAction
+  loadingText: testCustomAction
+  action: testCustomAction
+  caption: testCustomAction
+  successText: testCustomAction
+
+targetNodes:
+  nodeType: apache
+
+onInstall:
+  return:
+    type: success
+    message: 'return'
+    data:
+      intField: 1
+      arrayField: [1, 2, 3]
+      objectField: 
+        strField: test 
+
+actions:
+  testCustomAction:
+    return:
+      type: success
+      message: 'return'
+      data:
+        intField: 1
+        arrayField: [1, 2, 3]
+        objectField: 
+          strField: test
