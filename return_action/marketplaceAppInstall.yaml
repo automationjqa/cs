@@ -1,0 +1,11 @@
+type: install
+name: JE-54221 [CS] - marketplace.app.Install
+
+onInstall:
+    return:
+      type: success
+      data:
+        intField: 1
+        arrayField: [1, 2, 3]
+        objectField: 
+          strField: test
