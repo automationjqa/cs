@@ -1,0 +1,12 @@
+type: install
+name: marketplace.jps.Install
+
+onInstall:
+  return:
+    type: success
+    message: 'return'
+    data:
+      intField: 1
+      arrayField: [1, 2, 3]
+      objectField: 
+        strField: test
