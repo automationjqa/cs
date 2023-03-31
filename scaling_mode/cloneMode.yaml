@@ -1,0 +1,5 @@
+type: install
+name: Scaling_mode_test_CLONE
+nodes:
+  nodeType: apache
+  scalingMode: CLONE
