@@ -1,0 +1,5 @@
+type: install
+name: Scaling_mode_test_NEW
+nodes:
+  nodeType: apache
+  scalingMode: NEW
