@@ -1,17 +1,17 @@
 type: update
 name: 'JE-56227-scenario3'
 
-onBeforeServiceScaleOut [sqldb]: 
+onBeforeServiceScaleOut [cp]: 
   - log: before service scale out event
-onBeforeStartService [sqldb]: 
-  - log: before start service event
-onAfterServiceScaleOut [sqldb]: 
+onAfterServiceScaleOut [cp]: 
   - log: after service scale out event
-onAfterStartService [sqldb]: 
+onBeforeStartService [bl]: 
+  - log: before start service event
+onAfterStartService [bl]: 
   - log: after start service event
-onBeforeScaleOut [sqldb]:
+onBeforeScaleOut [cp]:
   - log: before scale out event
-onAfterScaleOut [sqldb]:
+onAfterScaleOut [cp]:
   - log: after scale out event
 onBeforeScaleIn [sqldb]:
   - log: before scale in event
