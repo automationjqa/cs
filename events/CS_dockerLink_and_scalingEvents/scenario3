@@ -5,9 +5,9 @@ onBeforeServiceScaleOut [cp]:
   - log: before service scale out event
 onAfterServiceScaleOut [cp]: 
   - log: after service scale out event
-onBeforeStartService [bl]: 
+onBeforeStartService [cp]: 
   - log: before start service event
-onAfterStartService [bl]: 
+onAfterStartService [cp]: 
   - log: after start service event
 onBeforeScaleOut [cp]:
   - log: before scale out event
