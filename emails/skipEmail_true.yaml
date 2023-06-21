@@ -1,10 +1,26 @@
 type: install
 name: Skip Email Test
-
+settings:
+  fields:
+    - name: envName
+      caption: EnvName
+      type: string
+      inputType: string
+      required: true
+      
 onInstall:
-  install:
-    skipEmail: true
-    jps: 
-      type: install
-      name: TEST EMAIL  
-      success: THIS TEST EMAIL SHOULDN'T BE RECEIVED!
+  script: |
+    return jelastic.marketplace.jps.Install({
+      envName: envName,
+      skipEmail: true,
+      jps: toJSON({
+        type: "install",
+        nodes: [{
+          nodeType: "apache",
+          cloudlets: 2
+        }],
+        name: "TEST EMAIL",
+        success: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
+        })
+    })
+  envName: ${settings.envName}
