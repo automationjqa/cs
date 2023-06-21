@@ -14,7 +14,7 @@ onInstall:
       skipNodeEmails: false,
       jps: toJSON({
         type: "install",
-        name: "Test skipNodeEmails",
+        name: "skipNodeEmails",
         nodes: [{
           nodeType: "redis",
           cloudlets: 4
