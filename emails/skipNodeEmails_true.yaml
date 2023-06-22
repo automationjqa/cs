@@ -7,23 +7,10 @@ settings:
       type: string
       inputType: string
       required: true
-onInstall:
-  script: |
-    return jelastic.marketplace.jps.Install({
-      envName: envName,
-      skipNodeEmails: false,
-      jps: toJSON({
-        type: "install",
-        name: "skipNodeEmails",
-        nodes: [{
-          nodeType: "redis",
-          cloudlets: 4
-          },
-          {
-          nodeType: "mysql",
-          cloudlets: 4
-        }],
-        skipNodeEmails: true
-      })
-    });
-  envName: ${settings.envName}
+      
+nodes:
+  - nodeType: redis
+    cloudlets: 4
+  - nodeType: mysql
+    cloudlets: 4
+skipNodeEmails: true
