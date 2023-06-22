@@ -22,4 +22,4 @@ onInstall:
         }]
       })
     });
-envName: ${settings.envName}
+  envName: ${settings.envName}
