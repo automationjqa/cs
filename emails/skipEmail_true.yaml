@@ -1,5 +1,5 @@
 type: install
-name: TEST EMAIL
+name: THIS TEST EMAIL SHOULDN'T BE RECEIVED
 settings:
   fields:
     - name: envName
