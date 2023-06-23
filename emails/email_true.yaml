@@ -6,7 +6,6 @@ settings:
       caption: EnvName
       type: string
       inputType: string
-      required: true
 
 baseUrl: https://raw.githubusercontent.com/automationjqa/cs/master/emails
   
