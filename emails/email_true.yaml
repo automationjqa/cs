@@ -13,6 +13,5 @@ baseUrl: https://raw.githubusercontent.com/automationjqa/cs/master/emails
 onInstall:
   return:
     type: success
-    email: true
-    text: success.md
+    email: success.md
     message: success.md
