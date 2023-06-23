@@ -6,7 +6,5 @@ settings:
       caption: EnvName
       type: string
       inputType: string
-      required: true
-      
+      required: true      
 skipEmail: true
-success: "THIS TEST EMAIL SHOULDN'T BE RECEIVED!"
