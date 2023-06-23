@@ -9,10 +9,6 @@ settings:
       required: true
 
 baseUrl: https://raw.githubusercontent.com/automationjqa/cs/master/emails
-
-nodes:
-    nodeType: apache
-    cloudlets: 2
   
 onInstall:
   return:
