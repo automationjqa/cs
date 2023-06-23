@@ -14,4 +14,5 @@ onInstall:
   return:
     type: success
     email: true
+    text: success.md
     message: success.md
