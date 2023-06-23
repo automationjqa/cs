@@ -6,5 +6,8 @@ settings:
       caption: EnvName
       type: string
       inputType: string
-      required: true      
+      required: true
+nodes:
+    nodeType: apache
+    cloudlets: 2
 skipEmail: true
