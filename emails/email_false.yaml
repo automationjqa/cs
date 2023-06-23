@@ -6,8 +6,13 @@ settings:
       caption: EnvName
       type: string
       inputType: string
-      required: true      
-onInstall:
+      required: true  
+      
+nodes:
+    nodeType: apache
+    cloudlets: 2
+
+onInstall: 
   return:
     type: success
     email: false
