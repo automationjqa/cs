@@ -6,9 +6,12 @@ settings:
       caption: EnvName
       type: string
       inputType: string
-      required: true      
+      required: true
+
+baseUrl: https://raw.githubusercontent.com/automationjqa/cs/master/emails
+  
 onInstall:
   return:
     type: success
     email: true
-    message: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
+    message: success.md
