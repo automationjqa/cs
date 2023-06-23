@@ -1,0 +1,14 @@
+type: install
+name: TEST EMAIL
+settings:
+  fields:
+    - name: envName
+      caption: EnvName
+      type: string
+      inputType: string
+      required: true      
+onInstall:
+  return:
+    type: success
+    email: true
+    message: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
