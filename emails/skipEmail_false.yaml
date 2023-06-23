@@ -8,5 +8,9 @@ settings:
       inputType: string
       required: true
       
+nodes:
+    nodeType: apache
+    cloudlets: 2 
+      
 skipEmail: false
 success: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
