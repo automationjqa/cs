@@ -7,10 +7,14 @@ settings:
       type: string
       inputType: string
       required: true
-      
 nodes:
-    nodeType: apache
-    cloudlets: 2 
-      
-skipEmail: true
-success: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
+      nodeType: apache
+      cloudlets: 2
+
+onInstall:
+  install:
+    skipEmail: true
+    jps: 
+      type: install
+      name: skipEmail_true      
+      success: THIS TEST EMAIL SHOULDN'T BE RECEIVED
