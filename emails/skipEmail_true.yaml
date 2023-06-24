@@ -1,5 +1,5 @@
 type: install
-name: NOT SKIPPED
+name: TEST EMAIL
 settings:
   fields:
     - name: envName
@@ -7,8 +7,10 @@ settings:
       type: string
       inputType: string
       required: true
+      
 nodes:
     nodeType: apache
-    cloudlets: 2
+    cloudlets: 2 
+      
 skipEmail: true
-success: "Email should be skipped!"
+success: "SUCCESS! YOUR TEST EMAIL IS RECEIVED."
