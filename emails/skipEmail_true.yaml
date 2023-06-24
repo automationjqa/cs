@@ -11,3 +11,4 @@ nodes:
     nodeType: apache
     cloudlets: 2
 skipEmail: true
+success: "Email should be skipped!"
