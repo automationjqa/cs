@@ -7,10 +7,6 @@ settings:
       type: string
       inputType: string
       required: true  
-
-nodes:
-    nodeType: apache
-    cloudlets: 2
     
 onInstall: 
   return:
